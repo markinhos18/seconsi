@@ -1,0 +1,6 @@
+AddHandler php74-script .php 
+suPHP_ConfigPath /home/seconci1/public_html/landingpages
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://landingpages.seconci-sp.org.br/$1 [R,L]
